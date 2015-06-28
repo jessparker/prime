@@ -6,11 +6,13 @@ isPrime = True
 
 print("_________")
 
-while i < sqrt_x:
+while i <= sqrt_x:
     if x % i == 0:
-        print(i, "is a factor of", x, "(", i, "x", int(x / i), "=", int(i * (x / i)), ")")
+        #print(i, "is a factor of", x, "(", i, "x", int(x / i), "=", int(i * (x / i)), ")")
         isPrime = False
     i += 1
 
 if isPrime:
     print(x, "is a prime number.")
+else:
+    print(x, "is NOT a prime number.")
